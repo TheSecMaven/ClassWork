@@ -1,0 +1,17 @@
+p3:	p3.o scanner.o poly.o
+	gcc -Wall -o p3 p3.o scanner.o poly.o
+
+scanner.o:  scanner.c scanner.h
+	gcc -Wall -c scanner.c
+
+p3.o:	p3.c poly.h scanner.h
+	gcc -Wall -c  poly.c scanner.c p3.c
+
+poly.o: poly.c poly.h 
+	gcc -Wall -c poly.c
+
+clean:  
+	rm -f *.o p3
+
+test:   p3
+	./p3

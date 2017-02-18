@@ -1,3 +1,5 @@
+#Project2
+
 Write a C++ program project2.cpp that operates as described below.
 • Your program should accept three command line arguments. The first two arguments are
 names of input files, and the third argument is the name of an output file.

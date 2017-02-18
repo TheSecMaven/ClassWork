@@ -4,6 +4,7 @@
 #include "scanner.h"
 #include "poly.h"
 
+//Function Declarations
 void Phase1(void);
 void Phase2(void);
 void Phase3(void);
@@ -11,9 +12,12 @@ void Phase3(void);
 int main(int argc, char *argv[]) {
     char *ans;
 	printf("\nTesting your project 3 polynomial functions - addTerm, printPoly, evaluate, derivative\n\n");
-	Phase1();
+	//Initiate testing of an empty polynomial, while adding terms, evaluating if they are correct, as well as taking the derivitave of the terms
+    Phase1();
 
-    printf("\nDo you want to check that your polynomials are always properly formatted (y/n) : ");
+    printf("\nDo you want to check that your polynomials are always properly formatted (y/n) : "); 
+    //Confirms with user if phase2 and phase3 need to be executed 
+
     ans = readToken(stdin);
     if ( strcmp(ans,"y") == 0 || strcmp(ans,"Y") == 0 || strcmp(ans, "yes") == 0 ) 
 	    Phase2();
@@ -25,7 +29,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
+//Tests the addition of new terms into an empty polynomial list
 void Phase1(void) {
 	printf("Phase One Testing\n");
 	printf("=================\n");
@@ -69,7 +73,7 @@ void Phase1(void) {
 	printf("\n");
 	return;
 }
-
+//Tests m derivative of polynomials as well as basic add-terms
 void Phase2(void) {
 	printf("\n\nPhase Two Testing\n");
 	printf("=================\n");
@@ -96,7 +100,7 @@ void Phase2(void) {
 
     return;
 }
-
+//Test the addition and subtraction of different polynomials and evaluates their correctness.
 void Phase3(void) {
 	printf("\n\nPhase Three Testing\n");
 	printf("===================\n");

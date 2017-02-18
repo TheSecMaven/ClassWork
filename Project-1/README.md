@@ -1,3 +1,5 @@
+#Project1
+
 Description
 For this project you will read words from a given file into your program. Each word consists strictly of the letters A-Z and a-z. Any whitespace, punctuation, digit, etc. will separate words. An example would be this!is A&Word. This text would represent the 4 words this, is, A, and Word. Each word should be convertedtolowercasesothatonlylowercase letters remain.
 Once you have read all of the words, you should output the total number of words read. Your next task is to determine how many distinct words appear in the file and output that value. Finally, you will prompt the user to enter a word and report how many occurrences of the given word are in the file. You will continue to prompt the user until they enter the EOF character.

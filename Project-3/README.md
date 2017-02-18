@@ -1,3 +1,5 @@
+#Project3
+
 In this project, you are asked to write a class named SparseMatrix that satisfies the following requirements. (The class will be defined and implemented in SparseMatrix.h and SparseMatrix.cpp respectively.)
  Define a data structure to efficiently represent a sparse matrix. You shall represent the sparse matrix internally using a linked structure. Do not use a 2D array representation, because some row and column numbers will be so large that a 2D array representation would be too inefficient in terms of both running time and memory usage. Matrix elements with value 0 are not permitted to appear within the sparse matrix representation.
  The default constructor will create a zero matrix (a matrix with all the elements being zero).
